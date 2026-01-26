@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fawaz Shaikh | Data Analyst</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    html {
+  scroll-behavior: smooth;
+}
+    :root {
+      --blue: #2563EB;
+      --violet: #7C3AED;
+      --teal: #14B8A6;
+      --bg: #F9FAFB;
+      --text: #0F172A;
+      --card: #FFFFFF;
+      --shadow: rgba(0,0,0,0.08);
+    .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--blue);
+}
+}
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">Fawaz Shaikh</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+    
+    section {
+      padding: 80px 8%;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, var(--blue), var(--violet), var(--teal));
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-image img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid rgba(255,255,255,0.8);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero h2 {
+      font-size: 1.4rem;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin-right: 12px;
+      padding: 12px 22px;
+      border-radius: 30px;
+      background: white;
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .buttons a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px var(--shadow);
+    }
+
+    /* CARDS */
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 10px 25px var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+    }
+
+    /* SECTION TITLES */
+    .section-title {
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+    }
+
+    /* SKILLS */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    /* PROJECTS */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .project-title {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .tech {
+      font-size: 0.9rem;
+      color: var(--violet);
+      margin-bottom: 15px;
+    }
+
+    /* PROJECT IMAGE */
+    .project-img {
+      width: 100%;
+      max-height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    }
+
+    /* CONTACT */
+    .contact p {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #e5e7eb;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.4rem;
+      }
+    }
+    section > * {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+  <div class="hero-wrapper">
+
+    <div class="hero-content">
+      <h1>Fawaz Shaikh</h1>
+      <h2>Data Analyst | SQL • Power BI • Python</h2>
+      <p>Turning raw data into clear, actionable business insights through analytics and visualization.</p>
+      <div class="buttons">
+        <a href="#projects">View Projects</a>
+        <a href="Fawaz_Shaikh_Data_Analyst_CV.pdf" download>Download CV</a>
+        <a href="https://www.linkedin.com/in/fawaazshaikh/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/FawazShaikh009" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="images/profile.png" alt="Fawaz Shaikh">
+    </div>
+
+  </div>
+</section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="card">
+      <p>
+        I am a Data Analyst with hands-on experience in SQL, Power BI, Excel, and Python, focused on transforming raw data into clear, actionable business insights.
+        <br><br>
+        I have worked on large-scale datasets, built interactive dashboards, tracked KPIs, and performed exploratory data analysis to support data-driven decision-making.
+        <br><br>
+        I am particularly interested in business analytics, reporting automation, and data visualization where data meets real business impact.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="card">
+        <h3>Core Analytics</h3>
+        <ul>
+          <li>SQL (Joins, Aggregations, Subqueries)</li>
+          <li>Power BI (Dashboards, KPIs, DAX Basics)</li>
+          <li>Excel (Pivot Tables, Power Query)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Programming</h3>
+        <ul>
+          <li>Python (Pandas, NumPy)</li>
+          <li>Data Cleaning</li>
+          <li>EDA</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Concepts</h3>
+        <ul>
+          <li>KPI Tracking</li>
+          <li>Business Reporting</li>
+          <li>Data Visualization</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+
+      <div class="card">
+        <h3 class="project-title">Turkish Retail Sales Analysis</h3>
+        <div class="tech">SQL | MySQL</div>
+        <ul>
+          <li>Analyzed 19.4M+ retail transactions (2017–2019).</li>
+          <li>Designed optimized schemas and indexing.</li>
+          <li>Improved query performance for large datasets.</li>
+        </ul>
+        <a href="https://github.com/FawazShaikh009/Turkish-Retail-Sales-Analysis-SQL"
+           target="_blank"
+           style="display:inline-block;margin-top:12px;color:#2563EB;font-weight:600;">
+           View on GitHub →
+        </a>
+      </div>
+
+      <div class="card">
+        <img src="images/superstore-dashboard.png" alt="Superstore Sales Dashboard" class="project-img">
+        <h3 class="project-title">Superstore Sales Analysis</h3>
+        <div class="tech">Power BI | SQL</div>
+        <ul>
+          <li>Analyzed 10,000+ sales records.</li>
+          <li>Built KPI-driven Power BI dashboards.</li>
+          <li>Reduced manual reporting by ~40%.</li>
+        </ul>
+        <a href="https://github.com/FawazShaikh009"
+           target="_blank"
+           style="display:inline-block;margin-top:12px;color:#2563EB;font-weight:600;">
+           View on GitHub →
+        </a>
+      </div>
+
+      <div class="card">
+        <h3 class="project-title">Credit Card Customer Analysis</h3>
+        <div class="tech">Python | Excel</div>
+        <ul>
+          <li>Performed EDA on 8,900+ customers.</li>
+          <li>Cleaned and prepared datasets.</li>
+          <li>Delivered business-focused insights.</li>
+        </ul>
+        <p style="margin-top:12px;color:#64748B;font-size:0.9rem;">
+          GitHub repository coming soon
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section>
+    <h2 class="section-title">Education & Certifications</h2>
+    <div class="card">
+      <p><strong>Bachelor of Accounting & Finance</strong><br>Mumbai University — 2025</p>
+      <br>
+      <p>
+        • Post Graduate Program in Data Science & Analytics — Imarticus Learning (Pursuing)<br>
+        • Advanced Excel — MKCL
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="card">
+      <p>Email: fawazshaikh004@gmail.com</p>
+      <p>LinkedIn & GitHub available above</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    Crafted with 💙 by Fawaz Shaikh
+  </footer>
+
+</body>
+</html>
