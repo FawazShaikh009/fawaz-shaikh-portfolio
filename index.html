@@ -9,9 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     :root {
       --blue: #2563EB;
@@ -23,11 +21,7 @@
       --shadow: rgba(0,0,0,0.08);
     }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       font-family: 'Inter', sans-serif;
@@ -63,11 +57,7 @@
       font-size: 1.1rem;
     }
 
-    .nav-links {
-      list-style: none;
-      display: flex;
-      gap: 25px;
-    }
+    .nav-links { list-style: none; display: flex; gap: 25px; }
 
     .nav-links a {
       text-decoration: none;
@@ -75,13 +65,9 @@
       font-weight: 500;
     }
 
-    .nav-links a:hover {
-      color: var(--blue);
-    }
+    .nav-links a:hover { color: var(--blue); }
 
-    section {
-      padding: 80px 8%;
-    }
+    section { padding: 80px 8%; }
 
     section > * {
       max-width: 1200px;
@@ -89,9 +75,7 @@
       margin-right: auto;
     }
 
-    h1, h2, h3 {
-      font-family: 'Poppins', sans-serif;
-    }
+    h1, h2, h3 { font-family: 'Poppins', sans-serif; }
 
     /* HERO */
     .hero {
@@ -109,9 +93,7 @@
       gap: 40px;
     }
 
-    .hero-content {
-      max-width: 700px;
-    }
+    .hero-content { max-width: 700px; }
 
     .hero-image img {
       width: 260px;
@@ -122,25 +104,14 @@
       box-shadow: 0 20px 40px rgba(0,0,0,0.25);
     }
 
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-
-    .hero h2 {
-      font-size: 1.4rem;
-      font-weight: 500;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 1.1rem;
-      margin-bottom: 30px;
-    }
+    .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+    .hero h2 { font-size: 1.4rem; font-weight: 500; margin-bottom: 20px; }
+    .hero p  { font-size: 1.1rem; margin-bottom: 30px; }
 
     .buttons a {
       display: inline-block;
       margin-right: 12px;
+      margin-bottom: 10px;
       padding: 12px 22px;
       border-radius: 30px;
       background: white;
@@ -169,25 +140,19 @@
       box-shadow: 0 20px 40px rgba(0,0,0,0.12);
     }
 
-    .section-title {
-      font-size: 2.2rem;
-      margin-bottom: 40px;
-    }
+    .section-title { font-size: 2.2rem; margin-bottom: 40px; }
 
     .skills-grid, .projects-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
     }
 
-    .project-img {
-      width: 100%;
-      max-height: 220px;
-      object-fit: cover;
-      border-radius: 12px;
-      margin-bottom: 16px;
-    }
+    .project-title { margin-bottom: 6px; }
+    .tech { color: #64748B; font-size: 0.9rem; margin-bottom: 12px; }
+
+    ul { padding-left: 18px; }
+    ul li { margin-bottom: 4px; }
 
     footer {
       text-align: center;
@@ -197,58 +162,51 @@
     }
 
     @media (max-width: 768px) {
-      .hero-wrapper {
-        flex-direction: column-reverse;
-        text-align: center;
-      }
-
-      .hero-image img {
-        width: 200px;
-        height: 200px;
-        margin-bottom: 20px;
-      }
-
-      .hero h1 {
-        font-size: 2.4rem;
-      }
+      .hero-wrapper { flex-direction: column-reverse; text-align: center; }
+      .hero-image img { width: 200px; height: 200px; margin-bottom: 20px; }
+      .hero h1 { font-size: 2.4rem; }
     }
-    /* ===== IMAGE SLIDER ===== */
-.slider {
-  position: relative;
-  overflow: hidden;
-  border-radius: 12px;
-  margin-bottom: 16px;
-}
 
-.slider img {
-  width: 100%;
-  display: none;
-}
+    /* IMAGE SLIDER */
+    .slider {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      margin-bottom: 16px;
+    }
 
-.slider img.active {
-  display: block;
-}
+    .slider img { width: 100%; display: none; }
+    .slider img.active { display: block; }
 
-.slider-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.6);
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  cursor: pointer;
-  font-size: 18px;
-  border-radius: 50%;
-}
+    .slider-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.6);
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 50%;
+    }
 
-.slider-btn.left {
-  left: 10px;
-}
+    .slider-btn.left  { left: 10px; }
+    .slider-btn.right { right: 10px; }
 
-.slider-btn.right {
-  right: 10px;
-}
+    .github-link {
+      display: inline-block;
+      margin-top: 12px;
+      color: #2563EB;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .coming-soon {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #64748B;
+    }
   </style>
 </head>
 
@@ -288,6 +246,7 @@
     </div>
   </section>
 
+  <!-- ABOUT -->
   <section id="about">
     <h2 class="section-title">About Me</h2>
     <div class="card">
@@ -295,6 +254,7 @@
     </div>
   </section>
 
+  <!-- SKILLS -->
   <section id="skills">
     <h2 class="section-title">Skills</h2>
     <div class="skills-grid">
@@ -304,94 +264,82 @@
     </div>
   </section>
 
+  <!-- PROJECTS -->
   <section id="projects">
-  <h2 class="section-title">Projects</h2>
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
 
-  <div class="projects-grid">
-
-    <!-- Superstore Project -->
-    <div class="card">
-      <div class="slider" data-slider>
-        <img src="images/superstore-1.png" class="active">
-        <img src="images/superstore-2.png">
-        <button class="slider-btn left">‹</button>
-        <button class="slider-btn right">›</button>
+      <!-- Superstore -->
+      <div class="card">
+        <div class="slider" data-slider>
+          <img src="images/superstore-1.png" class="active">
+          <img src="images/superstore-2.png">
+          <button class="slider-btn left">‹</button>
+          <button class="slider-btn right">›</button>
+        </div>
+        <h3 class="project-title">Superstore Sales Analysis</h3>
+        <p class="tech">Power BI • SQL • Python (EDA)</p>
+        <ul>
+          <li>Analyzed 10,000+ sales records to identify trends and KPIs.</li>
+          <li>Built an interactive Power BI dashboard for business users.</li>
+          <li>Performed exploratory data analysis using Python.</li>
+        </ul>
+        <a class="github-link" href="https://github.com/FawazShaikh009/Superstore-Sales-Dashboard" target="_blank">
+          View on GitHub →
+        </a>
       </div>
 
-      <h3 class="project-title">Superstore Sales Analysis</h3>
-      <p class="tech">Power BI • SQL • Python (EDA)</p>
-      <ul>
-        <li>Analyzed 10,000+ sales records to identify trends and KPIs.</li>
-        <li>Built an interactive Power BI dashboard for business users.</li>
-        <li>Performed exploratory data analysis using Python.</li>
-      </ul>
-      <a href="https://github.com/FawazShaikh009/Superstore-Sales-Dashboard"
-         target="_blank"
-         style="display:inline-block;margin-top:12px;color:#2563EB;font-weight:600;">
-        View on GitHub →
-      </a>
-
-    <!-- Turkish Retail SQL -->
-    <div class="card">
-      <h3 class="project-title">Turkish Retail Sales Analysis</h3>
-      <p class="tech">SQL • MySQL</p>
-      <ul>
-        <li>Analyzed 19.4M+ retail transactions.</li>
-        <li>Answered business questions using joins & aggregations.</li>
-        <li>Optimized queries for performance.</li>
-      </ul>
-      <a href="https://github.com/FawazShaikh009/Turkish-Retail-Sales-Analysis-SQL"
-         target="_blank"
-         style="display:inline-block;margin-top:12px;color:#2563EB;font-weight:600;">
-        View on GitHub →
-      </a>
-    </div>
-
-    <!-- Credit Card EDA -->
-    <div class="card">
-      <h3 class="project-title">Credit Card Customer Analysis</h3>
-      <p class="tech">Python • Pandas • EDA</p>
-      <ul>
-        <li>Performed EDA on 8,900+ customers.</li>
-        <li>Identified spending behavior and patterns.</li>
-        <li>Prepared clean datasets for analysis.</li>
-      </ul>
-     <p style="margin-top:10px;font-size:0.9rem;color:#64748B;">
-        GitHub repository coming soon
-      </p>
-         target="_blank"
-         style="display:inline-block;margin-top:12px;color:#2563EB;font-weight:600;">
-        View on GitHub →
-      </a>
-    </div>
-
-    <!-- Ecommerce Dashboard -->
-    <div class="card">
-      <div class="slider" data-slider>
-        <img src="images/Ecommerce Dashboard new.png" class="active">
-        <img src="images/Ecommerce Dashboard 2.png">
-        <img src="images/Ecommerce Dashboard 3.png">
-        <button class="slider-btn left">‹</button>
-        <button class="slider-btn right">›</button>
+      <!-- Turkish Retail -->
+      <div class="card">
+        <h3 class="project-title">Turkish Retail Sales Analysis</h3>
+        <p class="tech">SQL • MySQL</p>
+        <ul>
+          <li>Analyzed 19.4M+ retail transactions.</li>
+          <li>Answered business questions using joins & aggregations.</li>
+          <li>Optimized queries for performance.</li>
+        </ul>
+        <a class="github-link" href="https://github.com/FawazShaikh009/Turkish-Retail-Sales-Analysis-SQL" target="_blank">
+          View on GitHub →
+        </a>
       </div>
 
-      <h3 class="project-title">E-commerce Sales Dashboard</h3>
-      <p class="tech">Power BI • DAX • Business Analytics</p>
-      <ul>
-        <li>Designed interactive dashboard for sales & profit analysis.</li>
-        <li>Analyzed customer, product, and regional performance.</li>
-        <li>Enabled data-driven decision-making.</li>
-      </ul>
-      <a href="https://fawazshaikh.lovable.app/"
-         target="_blank"
-         style="display:inline-block;margin-top:12px;color:#2563EB;font-weight:600;">
-        Visit Live Site →
-      </a>
+      <!-- Credit Card EDA -->
+      <div class="card">
+        <h3 class="project-title">Credit Card Customer Analysis</h3>
+        <p class="tech">Python • Pandas • EDA</p>
+        <ul>
+          <li>Performed EDA on 8,900+ customers.</li>
+          <li>Identified spending behavior and patterns.</li>
+          <li>Prepared clean datasets for analysis.</li>
+        </ul>
+        <p class="coming-soon">GitHub repository coming soon</p>
+      </div>
+
+      <!-- Ecommerce Dashboard -->
+      <div class="card">
+        <div class="slider" data-slider>
+          <img src="images/Ecommerce Dashboard new.png" class="active">
+          <img src="images/Ecommerce Dashboard 2.png">
+          <img src="images/Ecommerce Dashboard 3.png">
+          <button class="slider-btn left">‹</button>
+          <button class="slider-btn right">›</button>
+        </div>
+        <h3 class="project-title">E-commerce Sales Dashboard</h3>
+        <p class="tech">Power BI • DAX • Business Analytics</p>
+        <ul>
+          <li>Designed interactive dashboard for sales & profit analysis.</li>
+          <li>Analyzed customer, product, and regional performance.</li>
+          <li>Enabled data-driven decision-making.</li>
+        </ul>
+        <a class="github-link" href="https://fawazshaikh.lovable.app/" target="_blank">
+          Visit Live Site →
+        </a>
+      </div>
+
     </div>
+  </section>
 
-  </div>
-</section>
-
+  <!-- CONTACT -->
   <section id="contact">
     <h2 class="section-title">Contact</h2>
     <div class="card">
@@ -402,25 +350,25 @@
   <footer>
     Crafted with 💙 by Fawaz Shaikh
   </footer>
-<script>
-  document.querySelectorAll('[data-slider]').forEach(slider => {
-    let images = slider.querySelectorAll('img');
-    let index = 0;
 
-    slider.querySelector('.right').onclick = () => {
-      images[index].classList.remove('active');
-      index = (index + 1) % images.length;
-      images[index].classList.add('active');
-    };
+  <script>
+    document.querySelectorAll('[data-slider]').forEach(slider => {
+      let images = slider.querySelectorAll('img');
+      let index = 0;
 
-    slider.querySelector('.left').onclick = () => {
-      images[index].classList.remove('active');
-      index = (index - 1 + images.length) % images.length;
-      images[index].classList.add('active');
-    };
-  });
-</script>
+      slider.querySelector('.right').onclick = () => {
+        images[index].classList.remove('active');
+        index = (index + 1) % images.length;
+        images[index].classList.add('active');
+      };
+
+      slider.querySelector('.left').onclick = () => {
+        images[index].classList.remove('active');
+        index = (index - 1 + images.length) % images.length;
+        images[index].classList.add('active');
+      };
+    });
+  </script>
+
 </body>
 </html>
-
-
